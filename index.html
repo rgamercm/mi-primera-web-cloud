@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera App en la Nube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ¡Mi App en la Nube!</h1>
+        <p>Esta es mi primera aplicación desplegada usando DevOps</p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').textContent = 
+                '✅ ¡Funciona! Esta app está lista para la nube.';
+        }
+    </script>
+</body>
+</html>
